@@ -13,8 +13,10 @@ GameObject:
   - component: {fileID: 9188755162311955458}
   - component: {fileID: 7513707532672302586}
   - component: {fileID: -4365303764361507991}
-  - component: {fileID: -7802969308692922352}
   - component: {fileID: -5869011158816848166}
+  - component: {fileID: -7802969308692922352}
+  - component: {fileID: -1051339993576278616}
+  - component: {fileID: 97026832269183268}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -110,6 +112,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Direction: {x: 0, y: 0, z: 1}
   Speed: 60
+--- !u!114 &-5869011158816848166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2680462582135465542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3661a5f6032c44447b4687e335eee58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-7802969308692922352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RespondTo:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 512
   TriggerEnter:
     m_PersistentCalls:
       m_Calls:
@@ -145,7 +159,7 @@ MonoBehaviour:
   TriggerLeave:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-5869011158816848166
+--- !u!114 &-1051339993576278616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,6 +168,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 2680462582135465542}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3661a5f6032c44447b4687e335eee58f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fa4264af4bd5470c926f5f1523b594a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &97026832269183268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2680462582135465542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e9d7e853aba2d449c0d2b059430ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RespondTo:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  TriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -1051339993576278616}
+        m_MethodName: DoDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  TriggerStay:
+    m_PersistentCalls:
+      m_Calls: []
+  TriggerLeave:
+    m_PersistentCalls:
+      m_Calls: []

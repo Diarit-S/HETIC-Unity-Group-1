@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 587609644704292402}
   - component: {fileID: 2525135981652906723}
   - component: {fileID: 6897039646144213006}
-  - component: {fileID: -7093779682513249332}
+  - component: {fileID: 4223512914507235706}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-7093779682513249332
+--- !u!114 &4223512914507235706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,3 +108,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjPrefabs: {fileID: 2680462582135465542, guid: 29ab19ed8aa2548ff943f9e393e76e2d,
     type: 3}
+  bullets: 2
