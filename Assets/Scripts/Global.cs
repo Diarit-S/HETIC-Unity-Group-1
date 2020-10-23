@@ -6,4 +6,6 @@ public class Global : MonoBehaviour
 {
     // This is the normal speed of any moving element
     public float Speed = 10;
+
+    public float Ammo = 10;
 }
