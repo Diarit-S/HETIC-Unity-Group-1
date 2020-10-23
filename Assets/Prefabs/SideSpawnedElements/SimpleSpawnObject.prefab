@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5588496992595861089}
   - component: {fileID: 7864402330636935650}
   - component: {fileID: 2831695313100210620}
-  - component: {fileID: 3551886624674819109}
+  - component: {fileID: -3548828199594969825}
   m_Layer: 0
   m_Name: SimpleSpawnObject
   m_TagString: Untagged
@@ -94,7 +94,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3551886624674819109
+--- !u!114 &-3548828199594969825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,7 +103,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3606686376956918572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93544c78670c6a045bf43b361234414b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f96655c3a0ca49c29b86e3fbb24f2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Direction: {x: 0, y: 0, z: 1}
