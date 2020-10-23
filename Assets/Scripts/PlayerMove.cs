@@ -20,6 +20,7 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        print("aaaaaaaa");
         float horVal = Input.GetAxis("Horizontal");
         
         Vector3 arrivalPos = transform.position + (Vector3.right * Speed * Time.deltaTime * horVal);
@@ -28,6 +29,7 @@ public class PlayerMove : MonoBehaviour
         float jumpVal = Input.GetAxis("Jump");
         if (!IsJumping && jumpVal > 0.1f)
         {
+            print("AAAAA");
             IsJumping = true;
             rb.AddForce(Vector3.up * JumpFactor, ForceMode.VelocityChange);
         }
